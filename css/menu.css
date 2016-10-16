@@ -1,0 +1,70 @@
+
+
+.main {
+    background: #abb93b;
+    z-index:150;
+}
+
+/* Centering nav */
+@media (min-width: 540px){
+    .navbar-nav{
+      width: auto;
+      position: relative;
+      float:none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+}
+/*HEADER*/
+
+
+/*NAVIGATION*/
+
+.main-nav {
+    background: #7a8600;
+    z-index: 200;
+    box-shadow: 0 2px 3px rgba(0,0,0, .4);
+    text-align: center;
+}
+
+.main-nav li > a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.main {
+  position: relative;
+}
+
+.main-nav-scrolled,
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus
+.navbar-nav > .active > a:active {
+  background-color: #8c9900;
+}
+
+/*NAVIGATION MOBILE*/
+button.navbar-toggler {
+  color: #fff;
+  float: left;
+}
+
+button.navbar-toggler:active,
+button.navbar-toggler:hover  {
+  border: 1px solid #fff;
+}
+
+.alert {
+  visibility: hidden;
+}
