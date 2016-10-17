@@ -18,6 +18,8 @@ body{
 	font-weight: 400;
 	padding: 0;
 	font-size: 16px;
+	position: relative;
+	width: auto;
 }
 /*@media(max-width:767px){body{margin: 50px 0px 0px 0px;}}
 @media(min-width:768px){body{margin: 0px 0px 0px 0px;}}*/
@@ -96,7 +98,11 @@ body{
 #start1{padding-top: 20px; background: #ccdb38; border-bottom: 10px solid #7a8600;}
 
 #start2{
-	background: #7a8600
+	background: #7a8600;
+}
+
+#imgStart1 {
+	width: 50%;
 }
 #info
 {background: #fff; padding: 50px 0px 50px 0px;

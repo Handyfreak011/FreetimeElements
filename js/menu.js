@@ -1,5 +1,6 @@
 var mn = $(".main-nav");
 mns = "main-nav-scrolled";
+mnus = "main-nav-unscrolled";
 hdr = $('header').height();
 console.log(hdr);
 
@@ -18,6 +19,13 @@ window.onresize = function(event) {
     hdr = $('header').height();
     $("body").css('padding-top', hdr)
 };
+
+// $(window).scroll(function(){
+//     $('.main').css({
+//         'left': $(this).scrollLeft()
+//     });
+// });
+
 
 var errMsg = $('#errorMessage');
 //Form Validation
