@@ -14,21 +14,23 @@ $(window).scroll(function() {
     }
 });
 
+
+// Setting the navs position
 window.onload = function(event) {
     hdr = $('header').height();
     $("body").css('padding-top', hdr)
 }
 
-// Setting the navs position
+
 window.onresize = function(event) {
     hdr = $('header').height();
     $("body").css('padding-top', hdr)
 };
 
-
+//Form Validation
 
 var errMsg = $('#errorMessage');
-//Form Validation
+
 function validateForm() {
     var x = document.forms["contactForm"]["firstName"].value;
     if (x == null || x == "") {

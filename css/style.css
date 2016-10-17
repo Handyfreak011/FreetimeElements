@@ -202,6 +202,9 @@ body {
     padding: 80px 0px 50px 0px;
 }
 
+
+/*Product Cards*/
+
 .btn-more {
     color: #fff;
     background-color: #abb93b;
@@ -241,12 +244,57 @@ body {
 
 .productModalText {
     color: #abb93b;
-    font-size: 1.4em;
+    font-size: 1.4rem;
+}
+
+@media(max-width:1200px) {
+    .productModalText {
+        font-size: 1.2rem;
+    }
+    .productModalTitle {
+        font-size: 2rem:
+    }
+}
+
+@media(max-width:768px) {
+    .productModalText {
+        font-size: 1.0rem;
+        padding-bottom: 15px;
+    }
+    .productModalTitle {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:544px) {
+    .productModalText {
+        font-size: 0.8rem;
+        padding-bottom: 10px;
+    }
+    .productModalTitle {
+        font-size: 1.4rem;
+    }
+}
+
+.productModalImage {
+    max-width: 80%;
 }
 
 #interesse {
     background: #abb93b;
     padding: 80px 0px 60px 0px;
+}
+
+@media(max-width: 544px) {
+    a.phone {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 240px) {
+    a.phone {
+        font-size: 0.85rem;
+    }
 }
 
 #contact {
@@ -882,31 +930,6 @@ p {
 
 .navbar-brand {
     color: #fff !important;
-}
-
-
-/****************************************************************************************************
-	overrride Navbars mobile
-****************************************************************************************************/
-
-.mobile .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    background: #7a8600;
-    border: 0.5px solid #7a8600;
-}
-
-.mobile .navbar-nav>li {
-    background: #a4b300;
-    border-top: 2px solid #7a8600;
-    font-weight: bold;
-}
-
-.mobile .navbar-nav>li>a {
-    color: #fff;
-}
-
-.mobile .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus .navbar-default .navbar-nav>.active>a:active {
-    color: #fff;
-    background-color: #abb93b;
 }
 
 
