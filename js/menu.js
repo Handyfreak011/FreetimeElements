@@ -14,6 +14,11 @@ $(window).scroll(function() {
     }
 });
 
+window.onload = function(event) {
+    hdr = $('header').height();
+    $("body").css('padding-top', hdr)
+}
+
 // Setting the navs position
 window.onresize = function(event) {
     hdr = $('header').height();
