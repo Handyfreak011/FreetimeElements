@@ -100,10 +100,27 @@ body{
 #start2{
 	background: #7a8600;
 }
-
-#imgStart1 {
-	width: 50%;
+@media(min-width:768px){
+	#imgStart1 {
+		max-height: 40%;
+		max-width: 40%;
+	}
 }
+
+@media(min-width:992px){
+	#imgStart1 {
+		max-height: 30%;
+		max-width: 30%;
+	}
+}
+
+	@media(min-width:1440px){
+		#imgStart1 {
+			max-height: 20%;
+			max-width: 20%;
+		}
+	}
+
 #info
 {background: #fff; padding: 50px 0px 50px 0px;
   border-top: 10px solid #ccdb38;
