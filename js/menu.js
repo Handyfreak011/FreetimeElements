@@ -25,11 +25,6 @@ window.onresize = function(event) {
     $("body").css('padding-top', hdr)
 };
 
-// $(window).scroll(function(){
-//     $('.main').css({
-//         'left': $(this).scrollLeft()
-//     });
-// });
 
 
 var errMsg = $('#errorMessage');

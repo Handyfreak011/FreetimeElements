@@ -212,10 +212,63 @@ form .process
 	background: #f2f2f2;
 }
 
-.img-social {
-	height: 70%;
-	width: 70%;
+
+
+#socialPics {
+	text-align: center;
 }
+
+.img-social {
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	min-width: 20%;
+}
+
+@media(max-width:3000px){
+	.img-social {
+		width: 120px;
+		padding: 15px;
+	}
+}
+
+@media(max-width:1200px){
+	.img-social {
+		width: 100px;
+		padding: 15px;
+	}
+}
+
+@media(max-width:992px){
+	.img-social {
+		width: 90px;
+		padding: 10px;
+	}
+}
+
+@media(max-width:768px){
+	.img-social {
+		width: 70px;
+		padding: 3px;
+	}
+}
+
+@media(max-width:544px){
+	.img-social {
+		width: 50px;
+		padding: 3px;
+	}
+}
+
+@media(max-width:375px){
+	.img-social {
+		width: 35px;
+		/*padding: 3px;*/
+	}
+}
+
+
 
 #foot{
 background: #fff;
