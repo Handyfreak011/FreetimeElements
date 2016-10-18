@@ -672,7 +672,6 @@ h2 a:hover {
 p {
     text-align: center;
     padding: 0px 0px 40px 0px;
-    color: #fff;
 }
 
 
@@ -983,10 +982,19 @@ p {
 
 .impressum {
     font-size: 14px;
+    color: #fff;
 }
 
 .copyright a {
     color: #fff;
+}
+
+.modal-impressum {
+    color: #000;
+}
+
+.modal-title-impressum {
+    color: #000;
 }
 
 @media(min-width:768px) {
