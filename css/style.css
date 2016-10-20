@@ -1,17 +1,3 @@
-/****************************************************************************************************
-
-****************************************************************************************************/
-
-
-/*
-ccdb38 - hellgr�n
-
-
-*/
-
-
-/*html{margin: 0;}*/
-
 body {
     background: #b81918;
     color: #fff;
@@ -23,43 +9,6 @@ body {
     position: relative;
     width: auto;
 }
-
-
-/*@media(max-width:767px){body{margin: 50px 0px 0px 0px;}}
-@media(min-width:768px){body{margin: 0px 0px 0px 0px;}}*/
-
-
-/*.linkmobile{display: block;}
-.linkdesktop{display: none;}*/
-
-
-/*.mycenter{text-align: center;}*/
-
-
-/* ====================================================================================================================== */
-
-
-/* Controller Mobile */
-
-
-/* ====================================================================================================================== */
-
-
-/*@media(max-width:768px){.mobile_navi{display: block;}}
-	@media(min-width:769px){.mobile_navi{display: none;}}
-	@media(max-width:767px){.desktop{display: none;}}
-	@media(min-width:768px){.desktop{display: block;}}
-	@media(max-width:767px){.mobile{display: block;}}
-	@media(min-width:768px){.mobile{display: none;}}*/
-
-
-/* ====================================================================================================================== */
-
-
-/* COLORS  */
-
-
-/* ====================================================================================================================== */
 
 .colorred {
     color: #b81918;
@@ -73,56 +22,6 @@ body {
     color: #fff!important;
 }
 
-
-/* ====================================================================================================================== */
-
-
-/* LOGO IMG*/
-
-
-/* ====================================================================================================================== */
-
-
-/*@media(min-width:100px){.logo{padding: 0px 20px 20px 20px; width: 100%;}}
-	@media(min-width:768px){.logo{padding: 0px 0px 0px 0px; margin: 0px 0px 20px 0px; width: 300px;}}*/
-
-
-/* ====================================================================================================================== */
-
-
-/* WELCOME IMG*/
-
-
-/* ====================================================================================================================== */
-
-
-/*.sx1{position: relative; top: 0px;}*/
-
-
-/* .sx2{position: absolute; top: -180px; left: 30%;width: 700px;} */
-
-
-/*@media(min-width:100px) {.sx2{position: absolute; top: -180px; left: 30%;width: 700px;}}
-@media(min-width:768px) {.sx2{position: absolute; top: -80px; left: 32%;width: 300px;}}
-@media(min-width:992px) {.sx2{position: absolute; top: -100px; left: 35%;width: 350px;}}
-@media(min-width:1200px){.sx2{position: absolute; top: -120px; left: 35%;width: 400px;}}
-@media(min-width:1600px){.sx2{position: absolute; top: -180px; left: 30%;width: 700px;}}*/
-
-
-/* Headerimg */
-
-
-/*@media(min-width:768px) {.headerimg{padding: 0px 0px 0px 0px;}}
-@media(min-width:992px) {.headerimg{padding: 0px 0px 0px 0px;}}
-
-
-
-
-@media(min-width:100px) {#startmobile{padding-top: 50px; background: #ccdb38;}}*/
-
-
-/*Centering Images*/
-
 .img-fluid {
     margin: auto;
 }
@@ -131,10 +30,10 @@ body {
 /* ====================================================================================================================== */
 
 
-/*SECTIONS*/
+/*START*/
 
 
-/* ====================================================================================================================== */
+/*=========================================================================================================================*/
 
 #start1 {
     padding-top: 20px;
@@ -145,6 +44,20 @@ body {
 #start2 {
     background: #7a8600;
 }
+
+#btnScrollDown {
+    position: absolute;
+    margin-left: auto;
+    background: transparent;
+    left: 0;
+    right: 0;
+    height: 10%;
+    width: 10%;
+    bottom: 4%;
+}
+
+
+/*QUERIES START*/
 
 @media(min-width:768px) {
     #imgStart1 {
