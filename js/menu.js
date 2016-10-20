@@ -1,7 +1,6 @@
 var mn = $(".main-nav");
 mns = "main-nav-scrolled";
 hdr = $('header').height();
-console.log(hdr);
 
 $("body").css('padding-top', hdr);
 
@@ -25,6 +24,16 @@ window.onresize = function(event) {
     hdr = $('header').height();
     $("body").css('padding-top', hdr)
 };
+
+//Scroll Top Button
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if(y>800) {
+    $('.btn-scrollTop').fadeIn();
+  } else {
+    $('.btn-scrollTop').fadeOut();
+  }
+});
 
 //Form Validation
 var errMsg = $('#errorMessage');
