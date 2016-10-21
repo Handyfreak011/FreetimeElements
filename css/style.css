@@ -322,6 +322,15 @@ body {
     display: none;
 }
 
+@media(max-width:544px) {
+    .btn-scrollTop {
+        height: 3%;
+        width: 3%;
+        right: 4rem;
+        bottom: 4rem;
+    }
+}
+
 
 /*IMAGE FLIP CSS*/
 
