@@ -87,6 +87,24 @@ body {
     margin-top: 10px;
 }
 
+@media(min-width:768px) {
+    #info {
+        padding-bottom: 300px;
+    }
+}
+
+@media(min-width:992px) {
+    #info {
+        padding-bottom: 350px;
+    }
+}
+
+@media(min-width:1200px) {
+    #info {
+        padding-bottom: 400px;
+    }
+}
+
 .textcontent {
     line-height: 30px;
     color: #666;
@@ -302,6 +320,39 @@ body {
     bottom: 1rem;
     z-index: 1;
     display: none;
+}
+
+
+/*IMAGE FLIP CSS*/
+
+@media(min-width:768px) {
+    #qualityPicsContainer {
+        perspective: 1000;
+    }
+    .qualityPicsCard {
+        transform-style: preserve-3d;
+        transition: all 0.7s linear;
+    }
+    .qualityPicsCard:hover {
+        transform: rotateY(180deg);
+    }
+    .face {
+        position: absolute;
+        backface-visibility: hidden;
+        width: 90%;
+        height: 90%;
+    }
+    .face.back {
+        display: block;
+        transform: rotateY(180deg);
+        box-sizing: border-box;
+        color: white;
+        text-align: center;
+    }
+}
+
+.qualityPicsCardPlaceholder {
+    visibility: hidden;
 }
 
 
