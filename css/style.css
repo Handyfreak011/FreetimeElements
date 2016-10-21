@@ -1,5 +1,5 @@
 body {
-    background: #b81918;
+    background: #fff;
     color: #fff;
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
@@ -82,8 +82,9 @@ body {
 
 #info {
     background: #fff;
-    padding: 50px 0px 50px 0px;
-    border-top: 10px solid #ccdb38;
+    padding: 120px 0px 50px 0px;
+    /*border-top: 10px solid #ccdb38;*/
+    margin-top: 10px;
 }
 
 .textcontent {
@@ -300,6 +301,7 @@ body {
     right: 3rem;
     bottom: 1rem;
     z-index: 1;
+    display: none;
 }
 
 
@@ -317,7 +319,7 @@ body {
     color: #fff;
     font-size: 30px;
     background: none;
-    display: none;
+    padding: 0.6rem;
 }
 
 
