@@ -1,26 +1,56 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+//smooth scroll that matches any href to an associated section id
+ $(function() {
+     $('a[href*=#]:not([href=#])').click(function() {
+       var target = $(this.hash);
+     if (location.hostname == this.hostname) {
+       if (target.length !=0) {
+             $('html,body').animate({
+                  scrollTop: target.offset().top
+             }, 1000);
+               return false;
+           }
+     }
+   });
+ });
+ /*get information like widths, coordinates, and heights
+   on page load. then call stickyNav() and addActive() on window scroll */
+ $(document).ready(function() {
+   var stickyNavTop = $('nav').offset().top,
+       window_height = $(window).height(),
+       nav = $('nav'),
+       nav_height = nav.outerHeight(),
+       doc_height = $(document).height();
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+   $(window).scroll(function() {
+       stickyNav();
+       addActive();
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+   });
+   //add 'sticking' functionality-- position fixed
+   function stickyNav(){
+     var scrollTop = $(window).scrollTop();
+     if (scrollTop > stickyNavTop) {
+         $('#nav').addClass('sticky');
+     } else {
+         $('#nav').removeClass('sticky');
+     }
+   };
+   // add active class to identify what section is currently being selected
+   function addActive() {
+     var scrollPos = $(window).scrollTop();
+     $('.section').each(function(){
+       var top = $(this).offset().top - nav_height,
+           bottom = top + $(this).outerHeight();
+       if (scrollPos >= top && scrollPos <= bottom) {
+         nav.find('a').removeClass('active');
+         nav.find('a[href="#'+ $(this).attr('id') + '"]').addClass('active');
+       }
+       else if (scrollPos + window_height == doc_height) {
+         if (!$('#nav a:last').hasClass('active')) {
+           nav.find('a').removeClass('active');
+           nav.find('a:last').addClass('active');
+         }
+       }
+     });
+   }
+ });

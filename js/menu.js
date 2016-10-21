@@ -17,12 +17,6 @@ $(window).scroll(function() {
 window.onload = function(event) {
     hdr = $('header').height();
     $("body").css('padding-top', hdr);
-    if(y>800) {
-      $('.btn-scrollTop').fadeIn();
-    } else {
-      $('.btn-scrollTop').fadeOut();
-    }
-
 }
 
 
