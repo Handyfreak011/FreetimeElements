@@ -181,7 +181,7 @@
                             <img class="card-img-top img-fluid productImage" src="img/Placeholder.png" alt="Produkt 1">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Feuerkorb "Marlo"</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal1">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal1">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                             <img class="card-img-top img-fluid" src="img/Placeholder.png" alt="Produkt 2">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Holzkohleeinsatz</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal2">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal2">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                             <img class="card-img-top img-fluid" src="img/Placeholder.png" alt="Produkt 3">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Campinggrill "Camper Sun"</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal3">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal3">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                             <img class="card-img-top img-fluid" src="img/Placeholder.png" alt="Produkt 4">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Feuerkorb "Marlo"</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal1">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal1">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                             <img class="card-img-top img-fluid" src="img/Placeholder.png" alt="Produkt 5">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Holzkohleeinsatz</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal2">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal2">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                             <img class="card-img-top img-fluid" src="img/Placeholder.png" alt="Produkt 6">
                             <div class="card-block">
                                 <h4 class="card-title productName text-xs-center">Campinggrill "Camper Sun"</h4>
-                                <a href="#products" class="btn btn-more" data-toggle="modal" data-target="#productModal3">Erfahre mehr </a>
+                                <a href="#modals" class="btn btn-more" data-toggle="modal" data-target="#productModal3">Erfahre mehr </a>
                             </div>
                         </div>
                     </div>
@@ -480,7 +480,7 @@
     <script>
         // smoothscroll
         $(function() {
-            $('a[href*="#"]:not([href="#"])').click(function() {
+            $('a[href*="#"]:not([href="#"]):not([href="#modalImpressum"]):not([href=".productModal1"]):not([href=".productModal2"]):not([href=".productModal3"])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
