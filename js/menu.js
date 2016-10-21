@@ -35,6 +35,35 @@ $(document).scroll(function () {
   }
 });
 
+//Modal scrollbar bugFix
+$('#productModal1').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#productModal1').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+
+$('#productModal2').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#productModal2').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+
+$('#productModal3').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#productModal3').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+
+$('#modalImpressum').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#modalImpressum').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+
 //Form Validation
 var errMsg = $('#errorMessage');
 
