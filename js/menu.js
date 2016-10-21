@@ -16,7 +16,13 @@ $(window).scroll(function() {
 // Setting the navs position
 window.onload = function(event) {
     hdr = $('header').height();
-    $("body").css('padding-top', hdr)
+    $("body").css('padding-top', hdr);
+    if(y>800) {
+      $('.btn-scrollTop').fadeIn();
+    } else {
+      $('.btn-scrollTop').fadeOut();
+    }
+
 }
 
 

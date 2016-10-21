@@ -299,6 +299,7 @@ body {
     height: 7%;
     right: 3rem;
     bottom: 1rem;
+    z-index: 1;
 }
 
 
@@ -316,6 +317,7 @@ body {
     color: #fff;
     font-size: 30px;
     background: none;
+    display: none;
 }
 
 
